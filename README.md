@@ -4,7 +4,7 @@ FindMyArduino example inspired by Apple's Find My iPhone, locate your Arduino by
 ### Introduction
 During our minor Smart Industry we have to build something for the Smart Room. This something is based on the Arduino knock off ESP32, which is a nice IoT hardware platform compatible with the Arduino IDE.
 
-![fma_ui](https://cldup.com/dTxpPi9lDf.thumb.png)
+![fma_ui](https://github.com/qarizma/FindMyArduino/blob/master/img/fma_ui.jpg?raw=true)
 
 ### Features
 - **Realtime** location using Google Maps
@@ -16,19 +16,21 @@ During our minor Smart Industry we have to build something for the Smart Room. T
 ### Hardware
 The hardware is based on the ESP32 and a GY-GPS6MV2 GPS module. These components are Arduino compatible.
 
-![fma_hardware](https://cldup.com/dTxpPi9lDf.thumb.png)
+![fma_hardware](https://github.com/qarizma/FindMyArduino/blob/master/img/fma_hardware.jpg?raw=true)
 
-![fma_circuit](https://cldup.com/dTxpPi9lDf.thumb.png)
+![fma_circuit](https://github.com/qarizma/FindMyArduino/blob/master/img/fma_circuit.jpg?raw=true)
 
-![fma_esp32](https://cldup.com/dTxpPi9lDf.thumb.png)
+![fma_esp32](https://github.com/qarizma/FindMyArduino/blob/master/img/fma_esp32.jpg?raw=true)
 
-![fma_gps](https://cldup.com/dTxpPi9lDf.thumb.png)
+![fma_gps](https://github.com/qarizma/FindMyArduino/blob/master/img/fma_gps.jpg?raw=true)
 
 ### Software
 The software is based on the DemoProgram by Franz. If you don't have access to this code I refer you to the following links:
 
 [http://arduinostuff.blogspot.nl/2014/05/neo6mv2-gps-module-with-arduino-uno-how.html](http://arduinostuff.blogspot.nl/2014/05/neo6mv2-gps-module-with-arduino-uno-how.html)
+
 [http://www.ayomaonline.com/iot/gy-gps6mv2-neo6mv2-neo-6m-gps-module-with-arduino-usb-ttl/](http://www.ayomaonline.com/iot/gy-gps6mv2-neo6mv2-neo-6m-gps-module-with-arduino-usb-ttl/)
+
 [https://github.com/mikalhart/TinyGPS](https://github.com/mikalhart/TinyGPS)
 
 This project is build using PHP and Javascript. Powered by the Google Maps API.
@@ -47,3 +49,6 @@ http://www.yoururl.com/gps.php?api=raw
 ```
 
 It will return the latest lattitude, longtitude and timestamp.
+
+### License
+MIT License
