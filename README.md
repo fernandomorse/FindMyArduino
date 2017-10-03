@@ -35,8 +35,10 @@ The software is based on the DemoProgram by Franz. If you don't have access to t
 
 This project is build using PHP and Javascript. Powered by the Google Maps API.
 
+If you have access to DemoProgram, you can patch it by following the steps in ESP32-DemoProgram.patch.
+
 ### Interoperability
-One of the assignments is to make your project interact with other projects. In this case FindMyArduino is just a sensor, it can't do anything else than pulsing GPS coordinates. This project includes a very simple API to get the current coordinates. Other students and their project are able to use this information in their systems.
+One of the assignments is to make your project interact with other projects for the *Smart Room*. In this case FindMyArduino is just a sensor, it can't do anything else than pulsing GPS coordinates. This project includes a very simple API to get the current coordinates. Other students and their project are able to use this information in their systems.
 
 The API can be accessed using two methods: RAW and JSON. The URL is currently accessible without authentication:
 http://www.yoururl.com/gps.php?api=json
