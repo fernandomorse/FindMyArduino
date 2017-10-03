@@ -2,7 +2,8 @@
 FindMyArduino example inspired by Apple's Find My iPhone, locate your Arduino by using GPS. The best way to find back your Arduino if it walks away or gets stolen.
 
 ### Introduction
-During our minor Smart Industry we have to build something for the Smart Room. This something is based on the Arduino knock off ESP32, which is a nice IoT hardware platform compatible with the Arduino IDE.
+During our minor Smart Industry we have to build something for the *Smart Room*. This something is based on the Arduino knock off ESP32, which is a nice IoT hardware platform compatible with the Arduino IDE. In the end it will be a room full of smart IoT devices connected to eachother.
+
 
 ![fma_ui](https://github.com/qarizma/FindMyArduino/blob/master/img/fma_ui.jpg?raw=true)
 
