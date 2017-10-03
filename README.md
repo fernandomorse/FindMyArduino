@@ -52,5 +52,8 @@ http://www.yoururl.com/gps.php?api=raw
 
 It will return the latest lattitude, longtitude and timestamp.
 
+### Configuration
+There isn't really much to configure, the only thing to remember is to change YOURLINK.COM to your website URL. YOURLINK.COM can be found in index.html and in the DemoProgram patch.
+
 ### License
 MIT License
