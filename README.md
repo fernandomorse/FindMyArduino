@@ -34,9 +34,23 @@ The software is based on the DemoProgram by Franz. If you don't have access to t
 
 [https://github.com/mikalhart/TinyGPS](https://github.com/mikalhart/TinyGPS)
 
-This project is build using PHP and Javascript. Powered by the Google Maps API.
+This project is build using PHP and Javascript. Powered by the Google Maps API. If you have access to DemoProgram, you can patch it by following the steps in ESP32-DemoProgram.patch.
 
-If you have access to DemoProgram, you can patch it by following the steps in ESP32-DemoProgram.patch.
+*The Arduino ONLINE/OFFLINE status is fetched by comparing the last timestamp with the current timestamp minus the buffer of 10 seconds. Getting a timestamp in PHP is done using:*
+```
+strtotime(date("H:i:s d-m-Y")); // returns timestamp in SECONDS
+```
+
+And in Javascript this is done using:
+```
+curTime = new Date();
+curTime.getTime(); // returns timestamp in MILLISECONDS
+```
+
+Remember to devide the JS timestamp by 1000 like in the final example below:
+```
+if ((JAVASCRIPTTIME/1000-PHPLASTTIME) > 10) { // offline
+```
 
 ### Interoperability
 One of the assignments is to make your project interact with other projects for the *Smart Room*. In this case FindMyArduino is just a sensor, it can't do anything else than pulsing GPS coordinates. This project includes a very simple API to get the current coordinates. Other students and their project are able to use this information in their systems.
