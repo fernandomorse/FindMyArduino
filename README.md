@@ -41,13 +41,13 @@ This project is build using PHP and Javascript. Powered by the Google Maps API. 
 strtotime(date("H:i:s d-m-Y")); // returns timestamp in SECONDS
 ```
 
-And in Javascript this is done using:
+*And in Javascript this is done using:*
 ```
 curTime = new Date();
 curTime.getTime(); // returns timestamp in MILLISECONDS
 ```
 
-Remember to devide the JS timestamp by 1000 like in the final example below:
+*Remember to devide the JS timestamp by 1000 like in the final example below:*
 ```
 if ((JAVASCRIPTTIME/1000-PHPLASTTIME) > 10) { // offline
 ```
